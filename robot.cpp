@@ -30,7 +30,18 @@ PYBIND11_MODULE(robot, m) {
 
         .def_readwrite("name", &Robot::name)
 
-        .def("add", &Robot::add, py::arg("i"), py::arg("j"))
+        .def("mul", 
+             //lambda function
+             [](Robot &self, int a, int b) ->int {
+                 return a * b; 
+             }
+             )
 
-        .def("sub", &Robot::sub, py::arg("i"), py::arg("j"));
+        .def("add", 
+             &Robot::add, 
+             py::arg("i"), py::arg("j"))
+
+        .def("sub", 
+             &Robot::sub, 
+             py::arg("i"), py::arg("j"));
 }

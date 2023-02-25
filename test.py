@@ -8,8 +8,11 @@ rt.name = "bob "
 rt.do_task("take taxi.")
 print(rt.name)
 
-c = rt.add(1,2)
+c = rt.add(2,3)
 print("add result is: ", c)
 
-c = rt.sub(1,2)
+c = rt.sub(2,3)
 print("sub result is: ", c)
+
+c = rt.mul(2,3)
+print("mul result is: ", c)
