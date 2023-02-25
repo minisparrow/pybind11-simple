@@ -4,7 +4,7 @@
 
 ### 1. git clone 
 ```
-git clone ...
+git clone https://github.com/minisparrow/pybind11-simple
 git submodule update --init --recursive 
 ```
 
@@ -25,5 +25,6 @@ source env38/bin/activate
 
 ```
 cd ..
+source source.sh
 python test.py
 ```
