@@ -1,6 +1,6 @@
 import robot 
 
-rt = robot.Robot("alice ")
+rt = robot.Robot("alice", robot.chat)
 rt.do_task("pick up a bootle.")
 print(rt.name)
 
@@ -16,3 +16,5 @@ print("sub result is: ", c)
 
 c = rt.mul(2,3)
 print("mul result is: ", c)
+
+print(rt.func_type)
